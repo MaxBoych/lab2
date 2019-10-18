@@ -4,7 +4,7 @@ public class AirportParserCSV {
 
     public String[] parse(String line) {
         String[] colums = line.split(",", 2);
-        
+
         for (int i = 0; i < 2; i++) {
 
         }
