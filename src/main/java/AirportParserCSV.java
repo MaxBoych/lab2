@@ -1,7 +1,7 @@
-public class AirportParserCSV {
+class AirportParserCSV {
     private static final String[] EMPTY = {};
 
-    public static String[] parse(String line) {
+    static String[] parse(String line) {
         String[] columns = line.split(",", 2);
 
         for (int i = 0; i < 2; i++) {
