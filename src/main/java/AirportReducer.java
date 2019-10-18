@@ -12,9 +12,9 @@ public class AirportReducer extends Reducer<AirportWritableComparable, Text, Tex
 
         //Text systemInfo = new Text(iter.next());
 
-        int max = Integer.MIN_VALUE, min = Integer.MAX_VALUE, sum = 0;
+        int max = Integer.MIN_VALUE, min = Integer.MAX_VALUE, sum = 0, size = 0;
 
-        for (; iter.hasNext(); ) {
+        for (; iter.hasNext(); size++) {
             int current = Integer.parseInt(iter.next().toString());
             if (current > max) {
                 max = current;
@@ -22,12 +22,13 @@ public class AirportReducer extends Reducer<AirportWritableComparable, Text, Tex
             if (current < min) {
                 min = current;
             }
-
-            sum 
+            sum += current;
 
             /*Text call = iter.next();
             Text outValue = new Text(call.toString() + "\t" + systemInfo.toString());
-            context.write(key.getFirst(), outValue);*/
+            */
         }
+
+        context.write();
     }
 }
