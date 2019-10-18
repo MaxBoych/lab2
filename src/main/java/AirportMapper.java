@@ -11,7 +11,7 @@ public class AirportMapper extends Mapper<LongWritable, Text, AirportWritableCom
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
         //SystemInfo system = new SystemInfo(value);
         System.out.println("qwerty");
-        System.out.println();
+        System.out.println(value.toString());
         //context.write(new AirportWritableComparable(), new Text(system.toString()));
     }
 }
