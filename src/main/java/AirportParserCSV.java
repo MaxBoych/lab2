@@ -1,3 +1,5 @@
 public class AirportParserCSV {
-    public 
+    public String[] parse(String line) {
+        
+    }
 }
