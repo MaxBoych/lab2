@@ -13,9 +13,12 @@ public class AirportTime {
 
         Job job = Job.getInstance();
         job.setJarByClass(AirportTime.class);
-        
-        FileInputFormat.addInputPath(job, new Path(args[0]));
-        FileOutputFormat.setOutputPath(job, new Path(args[1]));
+
+        /*FileInputFormat.addInputPath(job, new Path(args[0]));
+        FileOutputFormat.setOutputPath(job, new Path(args[1]));*/
+
+        MultipleInputs.addInputPath(job, new Path(args[0]), TextInputFormat.class, CallsJoinMapper.class);
+        MultipleInputs.addInputPath(job, new Path(args[1]), TextInputFormat.class, SystemsJoinMapper.class);
 
         job.setMapperClass(WordMapper.class);
         job.setReducerClass(WordReducer.class);
