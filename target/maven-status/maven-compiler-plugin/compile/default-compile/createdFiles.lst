@@ -1,3 +1,8 @@
-WordMapper.class
-WordCountApp.class
-WordReducer.class
+AirportPartitioner.class
+AirportWritableComparable.class
+AirportParserCSV.class
+AirportTime.class
+FlightMapper.class
+AirportMapper.class
+AirportReducer.class
+AirportGroupingComparator.class
