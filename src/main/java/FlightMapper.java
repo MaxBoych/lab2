@@ -8,7 +8,8 @@ public class FlightMapper extends Mapper<LongWritable, Text, AirportWritableComp
     @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
 
-
+        String[] parsed = AirportParserCSV.parse(value.toString(), 1);
+        
         context.write(new AirportWritableComparable(0, 0), new Text("abcdef " + value.toString()));
         /*ServiceCall call = new ServiceCall(value);
         context.write(new TextPair(call.getSystemA().toString(),"1"),
