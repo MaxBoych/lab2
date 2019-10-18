@@ -1,3 +1,4 @@
+import org.apache.hadoop.io.WritableComparable;
 import org.apache.hadoop.io.WritableComparator;
 
 public class AirportGroupingComparator extends WritableComparator {
@@ -6,10 +7,10 @@ public class AirportGroupingComparator extends WritableComparator {
     }
 
     @Override
-    public int compare(WritableComparator a, WritableComparator b) {
-        AirportGroupingComparator a1 = (AirportGroupingComparator) a;
-        AirportGroupingComparator b1 = (AirportGroupingComparator) b;
+    public int compare(WritableComparable a, WritableComparable b) {
+        AirportWritableComparable a1 = (AirportWritableComparable) a;
+        AirportWritableComparable b1 = (AirportWritableComparable) b;
 
-        return 
+        return a1.getAirportID() - b1.getAirportID();
     }
 }

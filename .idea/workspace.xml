@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a0cad0a3-bde2-443e-9c87-361eac7d6658" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/AirportGroupingComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AirportGroupingComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AirportTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AirportTime.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,8 +21,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/AirportWritableComparable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="138">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#424#425#0" expanded="true" />
@@ -66,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/AirportTime.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="31" column="44" lean-forward="true" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
+            <state relative-caret-position="437">
+              <caret line="28" column="47" lean-forward="true" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,12 +79,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/AirportGroupingComparator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+            <state relative-caret-position="368">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="e#149#150#0" expanded="true" />
                 <element signature="e#209#210#0" expanded="true" />
               </folding>
@@ -125,9 +127,9 @@
         <option value="$PROJECT_DIR$/src/main/java/AirportMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/AirportParserCSV.java" />
         <option value="$PROJECT_DIR$/src/main/java/AirportPartitioner.java" />
-        <option value="$PROJECT_DIR$/src/main/java/AirportTime.java" />
         <option value="$PROJECT_DIR$/src/main/java/AirportWritableComparable.java" />
         <option value="$PROJECT_DIR$/src/main/java/AirportGroupingComparator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/AirportTime.java" />
       </list>
     </option>
   </component>
@@ -235,12 +237,12 @@
       <workItem from="1570265660444" duration="2060000" />
       <workItem from="1570865548583" duration="1811000" />
       <workItem from="1570868396283" duration="1495000" />
-      <workItem from="1571415450440" duration="8178000" />
+      <workItem from="1571415450440" duration="8840000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25880000" />
+    <option name="totallyTimeSpent" value="26542000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -255,7 +257,7 @@
     <frame x="0" y="27" width="960" height="988" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2286652" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17067833" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -356,36 +358,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AirportTime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="31" column="44" lean-forward="true" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/WordReducer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AirportWritableComparable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#424#425#0" expanded="true" />
-            <element signature="e#450#451#0" expanded="true" />
-            <element signature="e#446#447#0" expanded="true" />
-            <element signature="e#470#471#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -400,13 +378,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AirportWritableComparable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#424#425#0" expanded="true" />
+            <element signature="e#450#451#0" expanded="true" />
+            <element signature="e#446#447#0" expanded="true" />
+            <element signature="e#470#471#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/AirportGroupingComparator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+        <state relative-caret-position="368">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#149#150#0" expanded="true" />
             <element signature="e#209#210#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AirportTime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="28" column="47" lean-forward="true" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
