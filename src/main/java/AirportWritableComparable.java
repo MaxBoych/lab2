@@ -13,7 +13,7 @@ public class AirportWritableComparable implements WritableComparable {
         this.keyData = keyData;
     }
 
-    public int getAirportID() {
+    int getAirportID() {
         return this.airportID;
     }
 
