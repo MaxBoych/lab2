@@ -13,7 +13,8 @@ public class AirportMapper extends Mapper<LongWritable, Text, AirportWritableCom
         //SystemInfo system = new SystemInfo(value);
         //System.out.println("qwerty");
         //System.out.println(value.toString());
-        String[] idAndName = AirportParserCSV.parse()
-        context.write(new AirportWritableComparable(0, 0), new Text("qwerty " + value.toString()));
+        String[] idAndName = AirportParserCSV.parse(value.toString());
+        if (idAndName)
+        context.write(new AirportWritableComparable(Integer.parseInt(idAndName[0]), 0), new Text(idAndName[1]));
     }
 }
