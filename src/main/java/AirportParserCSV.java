@@ -10,6 +10,7 @@ class AirportParserCSV {
             }
         } else {
             columns = line.split(",");
+            if (columns[0].equals("\"\""))
         }
 
         int size = columns.length;
