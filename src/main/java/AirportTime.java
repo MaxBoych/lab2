@@ -5,7 +5,7 @@ import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
-public class WordCountApp {
+public class AirportTime {
     public static void main(String[] args) throws Exception {
         if (args.length != 2) {
             System.exit(-1);
