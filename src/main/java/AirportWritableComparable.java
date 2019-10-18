@@ -8,9 +8,13 @@ public class AirportWritableComparable implements WritableComparable {
     private int airportID;
     private int keyData;
 
-    public AirportWritableComparable(int airportID, int keyData) {
+    AirportWritableComparable(int airportID, int keyData) {
         this.airportID = airportID;
         this.keyData = keyData;
+    }
+
+    public int getAirportID() {
+        return this.airportID;
     }
 
     @Override

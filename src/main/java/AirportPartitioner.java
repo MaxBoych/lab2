@@ -1,5 +1,8 @@
-public class AirportPartitioner {
-    public int getPartition(K key, V value, int numReduceTasks) {
-        return (key.hashCode() & Integer.MAX_VALUE) % numReduceTasks;
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.lib.partition.HashPartitioner;
+
+public class AirportPartitioner extends HashPartitioner {
+    public int getPartition(AirportWritableComparable key, Text value, int numReduceTasks) {
+        return (key.getAirportID() & Integer.MAX_VALUE) % numReduceTasks;
     }
 }
