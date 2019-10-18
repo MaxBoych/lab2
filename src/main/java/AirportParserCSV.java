@@ -5,17 +5,16 @@ class AirportParserCSV {
         String[] columns;
         if (keyData == 0) {
             columns = line.split(",", 2);
+            if (columns[0].equals("\"CODE\"")) {
+                return EMPTY;
+            }
         } else {
             columns = line.split(",");
         }
 
         int size = columns.length;
         for (int i = 0; i < size; i++) {
-            String check = columns[i];
             columns[i] = columns[i].replaceAll("\"", "");
-            if (columns[i].equals("")) {
-                return EMPTY;
-            }
         }
 
         return columns;
