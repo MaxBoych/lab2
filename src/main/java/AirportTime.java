@@ -24,7 +24,7 @@ public class AirportTime {
 
         FileOutputFormat.setOutputPath(job, new Path(args[2]));
 
-        job.setPartitionerClass(TextPair.FirstPartitioner.class);
+        job.setPartitionerClass();
         job.setGroupingComparatorClass(TextPair.FirstComparator.class);
         job.setReducerClass(JoinReducer.class);
         job.setMapOutputKeyClass(TextPair.class);
