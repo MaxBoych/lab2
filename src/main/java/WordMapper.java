@@ -16,6 +16,8 @@ public class WordMapper extends Mapper<LongWritable, Text, Text, IntWritable> {
             Text word = new Text();
             word.set(tokens.nextToken());
             context.write(word, new IntWritable(1));
+            int a = 0;
+            
         }
     }
 }
