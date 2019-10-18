@@ -29,6 +29,6 @@ public class AirportReducer extends Reducer<AirportWritableComparable, Text, Tex
             */
         }
 
-        context.write(key, new Text());
+        context.write(key, new Text("Max: " + max + "| Min: " + min + ""));
     }
 }
