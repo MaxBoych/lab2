@@ -12,7 +12,7 @@ public class AirportReducer extends Reducer<AirportWritableComparable, Text, Tex
 
         //Text systemInfo = new Text(iter.next());
 
-        int max = Integer.MIN_VALUE, min = Integer.MAX_VALUE, summa = 0;
+        int max = Integer.MIN_VALUE, min = Integer.MAX_VALUE, sum = 0;
 
         for (; iter.hasNext(); ) {
             int current = Integer.parseInt(iter.next().toString());
@@ -23,7 +23,7 @@ public class AirportReducer extends Reducer<AirportWritableComparable, Text, Tex
                 min = current;
             }
 
-            summa
+            sum 
 
             /*Text call = iter.next();
             Text outValue = new Text(call.toString() + "\t" + systemInfo.toString());
