@@ -1,13 +1,19 @@
 class AirportParserCSV {
     private static final String[] EMPTY = {};
 
-    static String[] parse(String line) {
-        String[] columns = line.split(",", 2);
+    static String[] parse(String line, int keyData) {
+        String[] columns;
+        if (keyData == 0) {
+            columns = line.split(",", 2);
+        } else {
+            columns = line.split(",");
+        }
 
-        for (int i = 0; i < 2; i++) {
+        int size = columns.length;
+        for (int i = 0; i < size; i++) {
             String check = columns[i];
             columns[i] = columns[i].replaceAll("\"", "");
-            if (check.equals(columns[i])) {
+            if (columns[i].equals("")) {
                 return EMPTY;
             }
         }
