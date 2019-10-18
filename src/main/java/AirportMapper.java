@@ -12,6 +12,6 @@ public class AirportMapper extends Mapper<LongWritable, Text, AirportWritableCom
         //SystemInfo system = new SystemInfo(value);
         System.out.println("qwerty");
         System.out.println(value.toString());
-        //context.write(new AirportWritableComparable(), new Text(system.toString()));
+        context.write(new AirportWritableComparable(0, 0), new Text(system.toString()));
     }
 }
