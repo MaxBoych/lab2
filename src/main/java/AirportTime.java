@@ -26,19 +26,12 @@ public class AirportTime {
 
         job.setPartitionerClass(AirportPartitioner.class);
         job.setGroupingComparatorClass(AirportGroupingComparator.class);
-        job.setReducerClass(JoinReducer.class);
+        job.setReducerClass(AirportReducer.class);
         job.setMapOutputKeyClass(TextPair.class);
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(Text.class);
         job.setNumReduceTasks(2);
 
         System.exit(job.waitForCompletion(true) ? 0 : 1);
-
-        /*job.setMapperClass(WordMapper.class);
-        job.setReducerClass(WordReducer.class);
-        job.setOutputKeyClass(Text.class);
-        job.setOutputValueClass(IntWritable.class);
-        job.setNumReduceTasks(2);
-        System.exit(job.waitForCompletion(true) ? 0 : 1);*/
     }
 }
