@@ -2,6 +2,8 @@ public class AirportParserCSV {
     private String airportID;
     private String airportName;
 
+    private static final String[] EMPTY = {};
+
     public String[] parse(String line) {
         String[] colums = line.split(",", 2);
 
@@ -9,7 +11,7 @@ public class AirportParserCSV {
             String check = colums[i];
             colums[i] = colums[i].replaceAll("\"", "");
             if (check.equals(colums[i])) {
-                return String[];
+                return EMPTY;
             }
         }
     }
