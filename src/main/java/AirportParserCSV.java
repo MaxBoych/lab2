@@ -6,7 +6,11 @@ public class AirportParserCSV {
         String[] colums = line.split(",", 2);
 
         for (int i = 0; i < 2; i++) {
-
+            String check = colums[i];
+            colums[i] = colums[i].replaceAll("\"", "");
+            if (check.equals(colums[i])) {
+                return String[];
+            }
         }
     }
 }
