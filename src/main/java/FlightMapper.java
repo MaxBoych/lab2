@@ -4,11 +4,11 @@ import org.apache.hadoop.mapreduce.Mapper;
 
 import java.io.IOException;
 
-public class FlightMapper extends Mapper<LongWritable, Text, TextPair, Text> {
+public class FlightMapper extends Mapper<LongWritable, Text, AirportWritableComparable, Text> {
     @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
-        ServiceCall call = new ServiceCall(value);
+        /*ServiceCall call = new ServiceCall(value);
         context.write(new TextPair(call.getSystemA().toString(),"1"),
-                new Text(call.toString()));
+                new Text(call.toString()));*/
     }
 }
