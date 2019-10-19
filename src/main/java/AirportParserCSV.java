@@ -7,6 +7,9 @@ class AirportParserCSV {
             columns = line.split(",", 2);
             for (String column : columns) {
                 System.out.println(column);
+                for (char c : column) {
+
+                }
             }
             System.out.println("^^^^_^^^^");
             if (columns[0].equals("CODE")) {
