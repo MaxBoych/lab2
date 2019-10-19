@@ -25,10 +25,10 @@ public class AirportWritableComparable implements WritableComparable<AirportWrit
         int i = (this.airportID == obj.airportID) ?
                 (this.keyData - obj.keyData) :
                 (this.airportID - obj.airportID);
-        System.out.println("ID: " + this.airportID + " " + obj.airportID);
+        /*System.out.println("ID: " + this.airportID + " " + obj.airportID);
         System.out.println("Key: " + this.keyData + " " + obj.keyData);
         System.out.println(i);
-        System.out.println();
+        System.out.println();*/
         return i;
     }
 

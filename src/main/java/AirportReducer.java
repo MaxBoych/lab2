@@ -27,6 +27,7 @@ public class AirportReducer extends Reducer<AirportWritableComparable, Text, Tex
                 continue;
             }
             double current = Double.parseDouble(str);
+            System.out.println(current);
 
             if (current > max) {
                 max = current;
