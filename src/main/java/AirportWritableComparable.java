@@ -28,11 +28,13 @@ public class AirportWritableComparable implements WritableComparable {
 
     @Override
     public void write(DataOutput dataOutput) throws IOException {
-
+        dataOutput.writeInt(this.airportID);
+        dataOutput.writeInt(this.keyData);
     }
 
     @Override
     public void readFields(DataInput dataInput) throws IOException {
-
+        this.airportID = dataInput.readInt();
+        this.keyData = dataInput.readInt();
     }
 }
