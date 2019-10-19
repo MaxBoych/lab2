@@ -11,9 +11,8 @@ public class AirportReducer extends Reducer<AirportWritableComparable, Text, Tex
         Iterator<Text> iter = values.iterator();
 
         double max = Double.MIN_VALUE, min = Double.MAX_VALUE, sum = 0.0, size = 0.0;
-        int count = 0;
         String airportName = "";
-        for (; iter.hasNext(); size++, count++) {
+        for (; iter.hasNext(); size++) {
             String str = iter.next().toString();
             if (str.isEmpty()) {
                 continue;
