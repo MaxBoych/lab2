@@ -6,6 +6,7 @@ class AirportParserCSV {
         if (keyData == 0) {
             columns = line.split(",", 2);
             if (columns[0].equals("\"CODE\"")) {
+                System.out.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
                 return EMPTY;
             }
         } else {
