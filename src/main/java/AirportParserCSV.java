@@ -10,7 +10,9 @@ class AirportParserCSV {
             }
         } else {
             columns = line.split(",");
-            if (columns[0].equals("\"\""))
+            if (columns[0].equals("\"YEAR\"")) {
+                return EMPTY;
+            }
         }
 
         int size = columns.length;
