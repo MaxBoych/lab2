@@ -42,7 +42,7 @@ public class AirportReducer extends Reducer<AirportWritableComparable, Text, Tex
             */
         }
 
-        //System.out.println("qwerty   " + count);
+        System.out.println("qwerty   " + max + " " + min + " " + sum);
         context.write(new Text(airportName), new Text("Max: " + max + " | Min: " + min + " | Middle: " + sum / size));
     }
 }
