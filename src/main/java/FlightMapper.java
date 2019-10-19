@@ -9,8 +9,8 @@ public class FlightMapper extends Mapper<LongWritable, Text, AirportWritableComp
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
 
         String[] parsed = AirportParserCSV.parse(value.toString(), 1);
+        context.write(new AirportWritableComparable(Integer.parseInt(parsed[14]), 1), new Text(parsed[18]));
 
-        context.write(new AirportWritableComparable(0, 0), new Text("abcdef " + value.toString()));
         /*ServiceCall call = new ServiceCall(value);
         context.write(new TextPair(call.getSystemA().toString(),"1"),
                 new Text(call.toString()));*/
