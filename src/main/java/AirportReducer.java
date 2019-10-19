@@ -40,6 +40,6 @@ public class AirportReducer extends Reducer<AirportWritableComparable, Text, Tex
             */
         }
 
-        context.write(new Text(airportName), new Text("Max: " + max + "| Min: " + min + "Middle: " + sum / size));
+        context.write(new Text(airportName), new Text("Max: " + max + "| Min: " + min + " | Middle: " + sum / size));
     }
 }
