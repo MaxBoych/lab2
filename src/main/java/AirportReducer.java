@@ -30,6 +30,7 @@ public class AirportReducer extends Reducer<AirportWritableComparable, Text, Tex
                 min = current;
             }
             sum += current;
+            
         }
 
         if (sum != 0) {
