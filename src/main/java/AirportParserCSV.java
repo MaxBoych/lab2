@@ -13,7 +13,7 @@ class AirportParserCSV {
                 System.out.println();
             }
             System.out.println("^^^^_^^^^");
-            if (columns[0].equals("CODE")) {
+            if (columns[0].equals("Code")) {
                 System.out.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
                 return EMPTY;
             }
