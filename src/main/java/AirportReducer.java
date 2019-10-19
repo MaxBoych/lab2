@@ -12,10 +12,10 @@ public class AirportReducer extends Reducer<AirportWritableComparable, Text, Tex
 
         //Text systemInfo = new Text(iter.next());
 
-        int max = Integer.MIN_VALUE, min = Integer.MAX_VALUE, sum = 0, size = 0;
+        double max = Double.MIN_VALUE, min = Double.MAX_VALUE, sum = 0.0, size = 0.0;
 
         for (; iter.hasNext(); size++) {
-            int current = Integer.parseInt(iter.next().toString());
+            double current = Double.parseDouble(iter.next().toString());
             if (current > max) {
                 max = current;
             }
