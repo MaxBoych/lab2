@@ -5,7 +5,7 @@ import java.io.DataOutput;
 import java.io.IOException;
 import java.util.Objects;
 
-public class AirportWritableComparable implements WritableComparable {
+public class AirportWritableComparable implements WritableComparable<AirportWritableComparable> {
     private int airportID;
     private int keyData;
 
@@ -21,10 +21,10 @@ public class AirportWritableComparable implements WritableComparable {
     }
 
     @Override
-    public int compareTo(Object obj) {
-        return (this.airportID == ((AirportWritableComparable) obj).airportID) ?
-                (this.keyData - ((AirportWritableComparable) obj).keyData) :
-                (this.airportID - ((AirportWritableComparable) obj).airportID);
+    public int compareTo(AirportWritableComparable obj) {
+        return (this.airportID == obj.airportID) ?
+                (this.keyData - obj.keyData) :
+                (this.airportID - obj.airportID);
     }
 
     @Override
