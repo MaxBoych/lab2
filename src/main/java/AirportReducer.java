@@ -16,6 +16,9 @@ public class AirportReducer extends Reducer<AirportWritableComparable, Text, Tex
 
         for (; iter.hasNext(); size++) {
             String delay = iter.next().toString();
+            System.out.println(delay);
+            System.out.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+            System.out.println();
             if (delay.isEmpty()) {
                 continue;
             }
