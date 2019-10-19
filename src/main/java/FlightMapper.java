@@ -5,6 +5,9 @@ import org.apache.hadoop.mapreduce.Mapper;
 import java.io.IOException;
 
 public class FlightMapper extends Mapper<LongWritable, Text, AirportWritableComparable, Text> {
+    private static final int AIRPORT_ID = 14;
+    private static final int DELAYED = 18;
+
     @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
 
@@ -12,7 +15,7 @@ public class FlightMapper extends Mapper<LongWritable, Text, AirportWritableComp
         if (parsed.length == 0) {
             return;
         }
-        context.write(new AirportWritableComparable(Integer.parseInt(parsed[14]), 1), new Text(parsed[18]));
+        context.write(new AirportWritableComparable(Integer.parseInt(parsed[AIRPORT_ID]), 1), new Text(parsed[DELAYED]));
 
         /*ServiceCall call = new ServiceCall(value);
         context.write(new TextPair(call.getSystemA().toString(),"1"),

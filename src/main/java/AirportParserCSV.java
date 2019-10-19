@@ -1,5 +1,7 @@
 class AirportParserCSV {
     private static final String[] EMPTY = {};
+    private static final int CANCELED = 19;
+    private static final int DELAYED = 18;
 
     static String[] parse(String line, int keyData) {
         String[] columns;
@@ -23,8 +25,8 @@ class AirportParserCSV {
             System.out.println(columns[18]);
             System.out.println(columns[19]);*/
             if ((columns[0].equals("\"YEAR\"")) ||
-                    (columns[19].equals("1.00")) ||
-                    (columns[18].equals("0.00"))) {
+                    (columns[CANCELED].equals("1.00")) ||
+                    (columns[DELAYED].equals("0.00"))) {
                 //System.out.println("$$$$$$$$$$$$$$$$$$$$$$$");
                 return EMPTY;
             }

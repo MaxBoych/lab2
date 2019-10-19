@@ -8,6 +8,9 @@ import java.io.IOException;
 import java.util.StringTokenizer;
 
 public class AirportMapper extends Mapper<LongWritable, Text, AirportWritableComparable, Text> {
+    private static final int AIRPORT_ID = 0;
+    private static final int AIRPORT_NAME = 1;
+
     @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
         //SystemInfo system = new SystemInfo(value);
@@ -17,6 +20,6 @@ public class AirportMapper extends Mapper<LongWritable, Text, AirportWritableCom
         if (parsed.length == 0) {
             return;
         }
-        context.write(new AirportWritableComparable(Integer.parseInt(parsed[0]), 0), new Text(parsed[1]));
+        context.write(new AirportWritableComparable(Integer.parseInt(parsed[AIRPORT_ID]), 0), new Text(parsed[AIRPORT_NAME]));
     }
 }
