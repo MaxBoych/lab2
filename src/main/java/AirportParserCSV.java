@@ -25,7 +25,7 @@ class AirportParserCSV {
             if ((columns[0].equals("\"YEAR\"")) ||
                     (columns[19].equals("\"1\"")) ||
                     (columns[18].equals("\"0\""))) {
-                //System.out.println("$$$$$$$$$$$$$$$$$$$$$$$");
+                System.out.println("$$$$$$$$$$$$$$$$$$$$$$$");
                 return EMPTY;
             }
         }
