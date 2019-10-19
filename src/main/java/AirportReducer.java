@@ -13,8 +13,9 @@ public class AirportReducer extends Reducer<AirportWritableComparable, Text, Tex
         //Text systemInfo = new Text(iter.next());
 
         double max = Double.MIN_VALUE, min = Double.MAX_VALUE, sum = 0.0, size = 0.0;
+        int count = 0;
         String airportName = "";
-        for (; iter.hasNext(); size++) {
+        for (; iter.hasNext(); size++, count++) {
             String str = iter.next().toString();
             //System.out.println(str);
             //System.out.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
@@ -40,6 +41,7 @@ public class AirportReducer extends Reducer<AirportWritableComparable, Text, Tex
             */
         }
 
+        System.out.println(count);
         context.write(new Text(airportName), new Text("Max: " + max + " | Min: " + min + " | Middle: " + sum / size));
     }
 }
