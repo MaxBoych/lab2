@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a0cad0a3-bde2-443e-9c87-361eac7d6658" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/AirportGroupingComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AirportGroupingComparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AirportMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AirportMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AirportParserCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AirportParserCSV.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AirportReducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AirportReducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AirportTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AirportTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AirportWritableComparable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AirportWritableComparable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FlightMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FlightMapper.java" afterDir="false" />
-    </list>
+    <list default="true" id="a0cad0a3-bde2-443e-9c87-361eac7d6658" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -282,12 +274,12 @@
       <workItem from="1570265660444" duration="2060000" />
       <workItem from="1570865548583" duration="1811000" />
       <workItem from="1570868396283" duration="1495000" />
-      <workItem from="1571415450440" duration="37110000" />
+      <workItem from="1571415450440" duration="37237000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54812000" />
+    <option name="totallyTimeSpent" value="54939000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
