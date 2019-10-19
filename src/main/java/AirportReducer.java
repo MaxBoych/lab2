@@ -21,7 +21,8 @@ public class AirportReducer extends Reducer<AirportWritableComparable, Text, Tex
             //System.out.println();
             if (str.isEmpty()) {
                 continue;
-            } else if (!Character.isDigit(str.charAt(0))) {
+            } else if (!Character.isDigit(str.charAt(0)) ||
+                    (str.contains())) {
                 airportName = str;
                 continue;
             }
