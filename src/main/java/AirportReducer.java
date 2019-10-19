@@ -13,16 +13,19 @@ public class AirportReducer extends Reducer<AirportWritableComparable, Text, Tex
         //Text systemInfo = new Text(iter.next());
 
         double max = Double.MIN_VALUE, min = Double.MAX_VALUE, sum = 0.0, size = 0.0;
-
+        String airportName = "";
         for (; iter.hasNext(); size++) {
-            String delay = iter.next().toString();
-            //System.out.println(delay);
+            String str = iter.next().toString();
+            //System.out.println(str);
             //System.out.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
             //System.out.println();
-            if (delay.isEmpty()) {
+            if (str.isEmpty()) {
                 continue;
-            } else if (Integer.Character.getNumericValue(delay.charAt(0)));
-            double current = Double.parseDouble(delay);
+            } else if (!Character.isDigit(str.charAt(0))) {
+                airportName = str;
+                continue;
+            }
+            double current = Double.parseDouble(str);
 
             if (current > max) {
                 max = current;
@@ -37,6 +40,6 @@ public class AirportReducer extends Reducer<AirportWritableComparable, Text, Tex
             */
         }
 
-        context.write(new Text(Integer.toString(key.getAirportID())), new Text("Max: " + max + "| Min: " + min + "Middle: " + sum / size));
+        context.write(new Text(airportName), new Text("Max: " + max + "| Min: " + min + "Middle: " + sum / size));
     }
 }
