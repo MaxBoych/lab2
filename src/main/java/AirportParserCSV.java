@@ -12,7 +12,7 @@ class AirportParserCSV {
             columns = line.split(",");
             if ((columns[0].equals("\"YEAR\"")) ||
                     (columns[19].equals("1")) ||
-                    (columns[])) {
+                    (columns[18].equals("0"))) {
                 return EMPTY;
             }
         }
