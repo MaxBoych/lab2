@@ -21,7 +21,7 @@ public class AirportReducer extends Reducer<AirportWritableComparable, Text, Tex
             //System.out.println();
             if (delay.isEmpty()) {
                 continue;
-            } else if (Integer.parseInt(delay.charAt(0)));
+            } else if (Character.getNumericValue(delay.charAt(0)));
             double current = Double.parseDouble(delay);
 
             if (current > max) {
