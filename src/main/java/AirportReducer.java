@@ -22,7 +22,7 @@ public class AirportReducer extends Reducer<AirportWritableComparable, Text, Tex
             if (str.isEmpty()) {
                 continue;
             } else if (str.contains("[a-zA-Z]+")) {
-                
+
                 airportName = str;
                 continue;
             }
