@@ -22,10 +22,10 @@ class AirportParserCSV {
             System.out.println(columns[0]);
             System.out.println(columns[18]);
             System.out.println(columns[19]);
-            if ((columns[0].equals("YEAR")) ||
-                    (columns[19].equals("1")) ||
-                    (columns[18].equals("0"))) {
-                System.out.println("$$$$$$$$$$$$$$$$$$$$$$$");
+            if ((columns[0].equals("\"YEAR\"")) ||
+                    (columns[19].equals("\"1\"")) ||
+                    (columns[18].equals("\"0\""))) {
+                //System.out.println("$$$$$$$$$$$$$$$$$$$$$$$");
                 return EMPTY;
             }
         }
