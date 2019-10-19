@@ -21,7 +21,7 @@ public class AirportReducer extends Reducer<AirportWritableComparable, Text, Tex
             //System.out.println();
             if (str.isEmpty()) {
                 continue;
-            } else if (str.fin("[a-zA-Z]+")) {
+            } else if (str.matches(".*[a-zA-Z]+.*")) {
 
                 airportName = str;
                 continue;
