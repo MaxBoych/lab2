@@ -20,6 +20,7 @@ public class AirportMapper extends Mapper<LongWritable, Text, AirportWritableCom
         if (parsed.length == 0) {
             return;
         }
+        System.out.println(parsed[AIRPORT_ID] + "   " + parsed[AIRPORT_NAME]);
         context.write(new AirportWritableComparable(Integer.parseInt(parsed[AIRPORT_ID]), 0), new Text(parsed[AIRPORT_NAME]));
     }
 }
