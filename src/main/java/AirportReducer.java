@@ -15,7 +15,12 @@ public class AirportReducer extends Reducer<AirportWritableComparable, Text, Tex
         double max = Double.MIN_VALUE, min = Double.MAX_VALUE, sum = 0.0, size = 0.0;
 
         for (; iter.hasNext(); size++) {
-            double current = Double.parseDouble(iter.next().toString());
+            String delay = iter.next().toString();
+            if (delay.isEmpty()) {
+                continue;
+            }
+            double current = Double.parseDouble(delay);
+
             if (current > max) {
                 max = current;
             }
