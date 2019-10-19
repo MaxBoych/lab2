@@ -10,16 +10,11 @@ public class AirportReducer extends Reducer<AirportWritableComparable, Text, Tex
             IOException, InterruptedException {
         Iterator<Text> iter = values.iterator();
 
-        //Text systemInfo = new Text(iter.next());
-
         double max = Double.MIN_VALUE, min = Double.MAX_VALUE, sum = 0.0, size = 0.0;
         int count = 0;
         String airportName = "";
         for (; iter.hasNext(); size++, count++) {
             String str = iter.next().toString();
-            //System.out.println(str);
-            //System.out.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
-            //System.out.println();
             if (str.isEmpty()) {
                 continue;
             } else if (str.matches(".*[a-zA-Z]+.*")) {
@@ -36,10 +31,6 @@ public class AirportReducer extends Reducer<AirportWritableComparable, Text, Tex
                 min = current;
             }
             sum += current;
-
-            /*Text call = iter.next();
-            Text outValue = new Text(call.toString() + "\t" + systemInfo.toString());
-            */
         }
 
         if (sum != 0) {

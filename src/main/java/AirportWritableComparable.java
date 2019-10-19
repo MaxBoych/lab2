@@ -3,7 +3,6 @@ import org.apache.hadoop.io.WritableComparable;
 import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
-import java.util.Objects;
 
 public class AirportWritableComparable implements WritableComparable<AirportWritableComparable> {
     private int airportID;
@@ -22,14 +21,9 @@ public class AirportWritableComparable implements WritableComparable<AirportWrit
 
     @Override
     public int compareTo(AirportWritableComparable obj) {
-        int i = (this.airportID == obj.airportID) ?
+        return (this.airportID == obj.airportID) ?
                 (this.keyData - obj.keyData) :
                 (this.airportID - obj.airportID);
-        /*System.out.println("ID: " + this.airportID + " " + obj.airportID);
-        System.out.println("Key: " + this.keyData + " " + obj.keyData);
-        System.out.println(i);
-        System.out.println();*/
-        return i;
     }
 
     @Override
@@ -43,18 +37,4 @@ public class AirportWritableComparable implements WritableComparable<AirportWrit
         this.airportID = dataInput.readInt();
         this.keyData = dataInput.readInt();
     }
-
-    /*@Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        AirportWritableComparable that = (AirportWritableComparable) o;
-        return airportID == that.airportID &&
-                keyData == that.keyData;
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(airportID, keyData);
-    }*/
 }

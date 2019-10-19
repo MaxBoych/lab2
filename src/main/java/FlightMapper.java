@@ -16,9 +16,5 @@ public class FlightMapper extends Mapper<LongWritable, Text, AirportWritableComp
             return;
         }
         context.write(new AirportWritableComparable(Integer.parseInt(parsed[AIRPORT_ID]), 1), new Text(parsed[DELAYED]));
-
-        /*ServiceCall call = new ServiceCall(value);
-        context.write(new TextPair(call.getSystemA().toString(),"1"),
-                new Text(call.toString()));*/
     }
 }

@@ -11,10 +11,6 @@ public class AirportGroupingComparator extends WritableComparator {
         AirportWritableComparable a1 = (AirportWritableComparable) a;
         AirportWritableComparable b1 = (AirportWritableComparable) b;
 
-        int i = a1.getAirportID() - b1.getAirportID();
-        //System.out.println("Comp | a1.ID: " + a1.getAirportID() + " b1.ID: " + b1.getAirportID());
-        //System.out.println(i);
-        //System.out.println();
-        return i;
+        return a1.getAirportID() - b1.getAirportID();
     }
 }
