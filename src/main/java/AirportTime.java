@@ -1,8 +1,6 @@
 import org.apache.hadoop.fs.Path;
-import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
-import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.input.MultipleInputs;
 import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
@@ -21,7 +19,7 @@ public class AirportTime {
 
         FileOutputFormat.setOutputPath(job, new Path(args[2]));
 
-        job.setPartitionerClass(AirportPartitioner.class);
+        job.setPartitionerClass(DataPartitioner.class);
         job.setGroupingComparatorClass(AirportGroupingComparator.class);
         job.setReducerClass(AirportReducer.class);
         job.setMapOutputKeyClass(AirportWritableComparable.class);

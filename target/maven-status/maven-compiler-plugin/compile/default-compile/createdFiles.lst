@@ -1,8 +1,9 @@
-AirportPartitioner.class
+MapTemplate.class
 AirportWritableComparable.class
-AirportParserCSV.class
 AirportTime.class
+UtilitiesCSV.class
 FlightMapper.class
 AirportMapper.class
 AirportReducer.class
 AirportGroupingComparator.class
+DataPartitioner.class

@@ -21,7 +21,6 @@ public class AirportReducer extends Reducer<AirportWritableComparable, Text, Tex
                 continue;
             }
             double current = Double.parseDouble(str);
-            System.out.println(current);
 
             if (current > max) {
                 max = current;
@@ -31,9 +30,7 @@ public class AirportReducer extends Reducer<AirportWritableComparable, Text, Tex
             }
             sum += current;
         }
-
         if (sum != 0) {
-            System.out.println("qwerty   " + max + " " + min + " " + sum);
             context.write(new Text(airportName), new Text("Max: " + max + " | Min: " + min + " | Middle: " + sum / size));
         }
     }
